@@ -1,0 +1,71 @@
+.experience
+    height: 100vh   
+    padding-top: 190px
+    &__title  
+        display: block  
+        font-size: 19px
+        margin-left: 500px
+        color: $main-bg-color
+        span
+            color: #fff
+        &:before
+            position: absolute
+            top: -70%
+            left: 44px
+            content: ''  
+            width: 50px
+            height: 50px
+            border-radius: 7px
+            z-index: -1
+            background-color: $main-exp-color
+    &__subtitle
+        text-align: center
+        font-weight: 700
+        font-size: 36px
+        line-height: 60px
+        margin-top: 20px
+    &__wrapper
+        padding: 60px 65px 0 65px
+        display: grid
+        grid-template-columns: repeat(2, 425px)
+        column-gap: 135px
+    &__column
+        &__img
+            margin-top: 25px
+            &:before
+                position: absolute
+                top: -9%
+                left: -5px
+                content: ''  
+                width: 50px
+                height: 50px
+                border-radius: 7px
+                z-index: -1
+                background-color: $main-element-color
+        &__item
+            position: relative
+            display: grid
+            grid-template-columns: 50px 375px  
+            column-gap: 20px 
+        &__title
+            margin: 0
+            margin-top: 10px
+            font-weight: 700
+            font-size: 16px
+            line-height: 21px
+        &__subtitle
+            font-weight: 500
+            font-size: 14px
+            line-height: 18px
+        &__text
+            margin-top: 10px
+            font-weight: 500
+            font-size: 15px
+            line-height: 18px
+        &__header   
+            position: relative
+            font-weight: 700
+            font-size: 25px
+            line-height: 30px
+            text-align: center
+            margin-bottom: 25px
