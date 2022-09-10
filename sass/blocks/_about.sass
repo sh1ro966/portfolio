@@ -1,0 +1,87 @@
+.about
+    position: relative
+    height: 100vh
+    background-color: white
+    padding-top: 190px
+    &__wrapper
+        display: grid
+        grid-template-columns: 400px 670px
+        grid-template-rows: minmax(245px, auto)
+        grid-auto-rows: minmax(245px, auto)
+        column-gap: 70px
+        row-gap: 40px
+    &__img
+        grid-row: 1/3
+        img
+            width: 100%
+            height: 600px
+            border-radius: 20px
+            -webkit-box-shadow: 0px 0px 25px 9px rgba(4, 20, 44, 1)
+            -moz-box-shadow: 0px 0px 25px 9px rgba(4, 20, 44, 1)
+            box-shadow: 0px 0px 25px 9px rgba(4, 20, 44, 1)
+    &__text
+        &__title   
+            margin-top: 14px 
+            &:before
+                position: absolute
+                top: -35%
+                left: -1px
+                content: ''  
+                width: 50px
+                height: 50px
+                border-radius: 7px
+                z-index: -1
+                background-color: $main-about-color
+            span
+                color: #fff
+        &__subtitle
+            font-weight: 700
+            font-size: 36px
+            line-height: 60px
+            span
+                font-size: 16px
+                color: #fff
+                background-color: $main-about-color
+                border-radius: 3px
+                vertical-align: middle
+    &__skills
+        margin-left: 15px
+        position: relative
+        display: grid
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr)
+        grid-auto-rows: 1fr
+        column-gap: 50px
+        row-gap: 20px
+        &__item
+            position: relative
+            display: grid
+            grid-template-columns: 40px 240px
+            column-gap: 20px 
+        &__img
+            &__skate
+                position: absolute
+                top: -3px
+                right: 3px
+            img
+                position: relative
+                z-index: 5
+                margin-top: 17px
+            &:before
+                position: absolute
+                top: 3%
+                left: -13px
+                content: ''  
+                width: 50px
+                height: 50px
+                border-radius: 7px
+                z-index: 3
+                background-color: $main-about-color
+        &__title
+            font-weight: 700
+            font-size: 18px
+            line-height: 21px
+            margin-bottom: 10px
+        &__text 
+            font-weight: 500
+            font-size: 15px
+            line-height: 18px

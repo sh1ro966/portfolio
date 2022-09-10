@@ -1,0 +1,29 @@
+.hamburger
+    position: absolute
+    top: 20px
+    right: 25px
+    cursor: pointer
+    z-index: 3
+    &_parts
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        text-align: center
+        padding-right: 5px
+        width: 47px
+        height: 42px
+        background-color: $main-element-color
+        border-radius: 7px
+        &:hover
+            span
+                background-color: #fff
+    span
+        display: block
+        margin-top: 7px
+        width: 30px
+        height: 5px
+        background: $main-bg-color
+        border-radius: 3px
+    span.long
+        width: 36px
+    

@@ -1,0 +1,65 @@
+.greetings
+    min-height: 100vh
+    position: relative
+    padding-top: 300px
+    background-color: $main-bg-color
+    &__title
+        color: #fff
+        font-weight: 500
+        font-size: 25px
+        line-height: 24px
+        margin-left: 4px
+    &__header
+        position: relative
+        margin-top: 25px
+        padding-top: 12px
+        padding-left: 10px
+        color: $main-bg-color
+        font-weight: 700
+        font-size: 60px
+        line-height: 68px
+        z-index: 3
+        &_back
+            position: relative
+            width: 730px
+            height: 160px
+            background-color: #81A1F0
+            padding: 0 5px 0 9px
+            border-radius: 7px
+            z-index: 3
+    &__btns
+        margin-top: 22px
+        display: flex
+        width: 270px
+        justify-content: space-between
+        align-items: center
+    &__btn 
+        text-decoration: none
+        font-style: normal
+        font-weight: 700
+        font-size: 18px
+        line-height: 21px
+        color: #fff
+        z-index: 2
+        &:hover
+            color: #fff
+    &__btn_orange
+        color: $main-bg-color
+        padding-top: 12px
+        width: 135px
+        height: 45px
+        background-color: $main-element-color
+        text-align: center
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+        border-radius: 7px
+.mini-square
+    position: relative
+    padding-left: 10px
+    z-index: 3
+    @include mini-square
+    
+.different
+    color: $main-bg-color
+    font-weight: 500
+    font-size: 25px
+    line-height: 24px
