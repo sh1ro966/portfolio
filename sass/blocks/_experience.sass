@@ -29,27 +29,31 @@
         display: grid
         grid-template-columns: repeat(2, 425px)
         column-gap: 135px
+        row-gap: 60px
     &__column
         &__img
-            margin-top: 25px
             &:before
                 position: absolute
-                top: -9%
-                left: -5px
+                top: 7%
+                left: 45px
                 content: ''  
                 width: 50px
                 height: 50px
                 border-radius: 7px
                 z-index: -1
                 background-color: $main-element-color
+            img
+                position: absolute
+                top: 20px
+                left: 60px
         &__item
             position: relative
             display: grid
-            grid-template-columns: 50px 375px  
+            grid-template-columns: 25px 400px  
             column-gap: 20px 
         &__title
             margin: 0
-            margin-top: 10px
+            margin-top: 15px
             font-weight: 700
             font-size: 16px
             line-height: 21px
@@ -58,14 +62,17 @@
             font-size: 14px
             line-height: 18px
         &__text
-            margin-top: 10px
+            margin-top: 20px
             font-weight: 500
             font-size: 15px
             line-height: 18px
-        &__header   
-            position: relative
-            font-weight: 700
-            font-size: 25px
-            line-height: 30px
-            text-align: center
-            margin-bottom: 25px
+        &__header
+            padding-left: 60px   
+#fixing
+    position: absolute
+    top: 20px
+    left: 55px
+#courses
+    position: absolute
+    top: 25px
+    left: 58px
