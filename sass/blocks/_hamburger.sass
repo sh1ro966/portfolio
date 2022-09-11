@@ -14,16 +14,19 @@
         height: 42px
         background-color: $main-element-color
         border-radius: 7px
+        transition: 0.2s all
+        &:hover
+            background-color: $main-bg-color
+        span
+            display: block
+            margin-top: 7px
+            width: 30px
+            height: 5px
+            background: $main-bg-color
+            border-radius: 3px
+            transition: 0.2s all
         &:hover
             span
                 background-color: #fff
-    span
-        display: block
-        margin-top: 7px
-        width: 30px
-        height: 5px
-        background: $main-bg-color
-        border-radius: 3px
-    span.long
-        width: 36px
-    
+        span.long
+            width: 36px

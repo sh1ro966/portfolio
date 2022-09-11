@@ -32,6 +32,9 @@
         cursor: pointer
         background-color: $main-element-color
         border-radius: 7px
+        transition: 0.2s all
+        &:hover
+            background-color: $main-bg-color
         span
             display: block
             margin-top: 5px
@@ -39,6 +42,7 @@
             height: 5px
             border-radius: 3px
             background-color: $main-bg-color
+            transition: 0.2s all
             &:nth-child(1)
                 transform: translatey(13px) rotate(-45deg)
             &:nth-child(2)    
@@ -58,7 +62,7 @@
     &__anim
         text-decoration: none
         color: #fff
-        background-image: linear-gradient(#81A1F0, #81A1F0) !important
+        background-image: linear-gradient(#fff, #fff) !important
         background-repeat: no-repeat
         background-size: 0% 100%
         background-position-x: right
@@ -67,7 +71,7 @@
             background-size: 100% 100%
             background-position-x: left
             border-radius: 7px
-            color: #fff
+            color: $main-bg-color
         a
             color: #fff
     &__overlay
