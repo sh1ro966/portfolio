@@ -1,7 +1,11 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
+/php
 /node_modules
+/package-lock.json
+/package.json
+/gulpfile.js
 
 # testing
 /coverage
