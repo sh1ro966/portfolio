@@ -34,15 +34,15 @@ function validateForms(form) {
       },
       messages: {
         name: {
-          required: "Please tell me your name",
+          required: "Wrong name",
           minlength: jQuery.validator.format("Required {0} symbols!"),
         },
         email: {
-          required: "Please tell me your email",
+          required: "Wrond email",
           email: "Wrong email format",
         },
         text: {
-            required: "Please tell me some information"
+            required: "It's not enough"
         },
         check: {
             required: "I need your aproval to continue"

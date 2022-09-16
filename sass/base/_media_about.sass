@@ -2,9 +2,17 @@
     .container
         max-width: 1200px !important
         margin: 0 100px 0 100px !important
-
     .about
         padding-top: 120px !important
+        &__wrapper
+            grid-template-columns: 400px 598px !important
+            column-gap: 42px !important
+        &__skills
+            grid-template: repeat(2, minmax(115px,auto))/repeat(2,220px) !important
+            column-gap: 80px !important
+            &__item
+                column-gap: 7px !important
+                grid-template-columns: 40px 230px !important
 @media (max-width: 1200px)
     .container
         max-width: 700px !important
@@ -28,7 +36,7 @@
         margin: 0 20px 0 40px !important
     .about
         &__wrapper
-            grid-template-columns: 300px 400px !important
+            grid-template-columns: 300px 380px !important
         &__text
             &__subtitle
                 font-size: 30px !important
@@ -66,6 +74,9 @@
         max-width: 100%!important
         padding: 0 10px 0 33px !important
     .about
+        &__img
+            width: 90% !important
+            margin: 0 auto !important
         &__text
             &__subtitle
                 font-size: 24px !important
