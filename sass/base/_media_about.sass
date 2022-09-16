@@ -1,0 +1,92 @@
+@media (max-width: 1440px)
+    .container
+        max-width: 1200px !important
+        margin: 0 100px 0 100px !important
+
+    .about
+        padding-top: 120px !important
+@media (max-width: 1200px)
+    .container
+        max-width: 700px !important
+    .about
+        &__wrapper
+            grid-template-columns: 400px 500px !important
+            column-gap: 50px !important
+            row-gap: 30px !important
+            margin-left: -25px !important
+        &__skills
+            grid-template: repeat(2, minmax(115px,auto))/repeat(2,250px) !important
+            column-gap: 12px !important
+            margin-left: 0 !important
+            &__item
+                grid-template-columns: 26px 178px !important
+                column-gap: 20px !important
+
+@media (max-width: 1024px)
+    .container
+        max-width: 700px !important
+        margin: 0 20px 0 40px !important
+    .about
+        &__wrapper
+            grid-template-columns: 300px 400px !important
+        &__text
+            &__subtitle
+                font-size: 30px !important
+                margin-bottom: 10px !important
+        &__skills
+            grid-template-columns: 300px !important
+            grid-auto-rows: minmax(115px, auto) !important
+            row-gap: 10px !important
+            &__item
+                grid-template-columns: 35px 325px !important
+                column-gap: 20px !important 
+                &:nth-child(3)
+                    display: none
+@media (max-width: 768px)
+    .container
+        max-width: 100% !important
+        padding: 0 10px 0 35px !important
+        margin: 0 !important
+    .about
+        padding: 50px 0 50px 0 !important
+        &__text
+            &__subtitle
+                font-size: 28px !important
+        &__wrapper
+            padding-bottom: 50px !important
+            margin-left: 0 !important
+            grid-template: 340px auto auto / 100% !important
+        &__skills
+            padding-left: 14px !important
+            &__item
+                &:nth-child(3)
+                    display: inherit
+@media (max-width: 425px)
+    .container
+        max-width: 100%!important
+        padding: 0 10px 0 33px !important
+    .about
+        &__text
+            &__subtitle
+                font-size: 24px !important
+        &__skills
+            row-gap: 30px !important
+            padding-left: 30px !important
+            &__item
+                grid-template-columns: 35px 275px !important
+@media (max-width: 375px)
+    .container
+        max-width: 100% !important
+        padding: 0 10px 0 31px !important
+    .about
+        padding: 50px 0 50px 0 !important
+        &__wrapper
+            padding-bottom: 50px !important
+        &__text
+            &__subtitle
+                font-size: 20px !important
+        &__skills
+            padding-left: 25px !important
+            &__item
+                grid-template-columns: 35px 215px !important
+                column-gap: 15px !important
