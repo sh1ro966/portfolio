@@ -39,6 +39,25 @@ audio {
   background: #fff;
   bottom: -50px;
   left: 50%;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.5);
+}
+.separator:after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.5);
+  top: 50%;
+  right: -50px;
+}
+
+.title {
+  font-family: Rubik Mono One;
+  font-size: 60px;
+  color: #fff;
 }
 
 .button {
@@ -50,7 +69,6 @@ audio {
   width: 15%;
   text-align: center;
   background: #fff;
-  margin-top: 70px;
   text-decoration: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -76,6 +94,9 @@ audio {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.banner .separator {
+  left: 32%;
 }
 .banner .nickname {
   color: #fff;
@@ -131,6 +152,12 @@ audio {
   width: 36px;
   height: 36px;
   margin: 0 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.banner .social_media img:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
 }
 
 .about {
@@ -143,10 +170,6 @@ audio {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.about .title {
-  font-family: Rubik Mono One;
-  font-size: 60px;
 }
 .about .wrapper {
   margin: 40px 0;
@@ -170,22 +193,26 @@ audio {
 .about .wrapper .col-md-11 {
   text-align: right;
 }
+.about .separator {
+  left: 85%;
+}
 
 .projects {
   width: 100%;
   height: 100vh;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 1px solid #fff;
 }
-.projects .title {
-  font-family: Rubik Mono One;
-  font-size: 60px;
-  color: #fff;
+.projects .separator {
+  left: 62%;
+}
+.projects .button {
+  margin-top: 40px;
 }
 .projects .wrapper {
   display: -webkit-box;
@@ -196,6 +223,9 @@ audio {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 .projects .wrapper .item {
   display: -webkit-box;
@@ -203,6 +233,7 @@ audio {
   display: flex;
   height: 70vh;
   width: 25%;
+  margin: 0 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -230,4 +261,67 @@ audio {
   -webkit-filter: invert(1);
           filter: invert(1);
   width: 100px;
+}
+.projects .wrapper .shop {
+  height: 60vh;
+}
+.projects .wrapper .info_portal {
+  height: 50vh;
+}
+
+.contact {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+.contact .wrapper .social_media a {
+  text-decoration: none;
+  color: #191919;
+}
+.contact .wrapper #contact-form input {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+.contact .wrapper #contact-form input:focus {
+  outline: none;
+  border: 1px solid black;
+}
+.contact .wrapper #contact-form label {
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  height: 18px;
+  padding: 0 8px;
+  background-color: white;
+  font-size: 12px;
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
