@@ -52,11 +52,28 @@ body {
   top: 50%;
   right: -50px;
 }
+@media screen and (max-width: 768px) {
+  .separator:after {
+    width: 50px;
+    right: -25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .separator {
+    height: 50px;
+    bottom: -25px;
+  }
+}
 
 .title {
   font-family: Rubik Mono One;
   font-size: 60px;
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
 }
 
 .button {
@@ -75,6 +92,11 @@ body {
 .button:hover {
   color: #fff;
   background: #000;
+}
+@media screen and (max-width: 768px) {
+  .button {
+    width: 50%;
+  }
 }
 
 .banner {
@@ -142,6 +164,11 @@ body {
   text-align: center;
   font-size: 36px;
 }
+@media screen and (max-width: 768px) {
+  .banner .wrapper .text {
+    font-size: 26px;
+  }
+}
 .banner .social_media {
   z-index: 1;
 }
@@ -176,6 +203,11 @@ body {
 .projects .button {
   margin-top: 40px;
 }
+@media screen and (max-width: 768px) {
+  .projects .button {
+    margin-top: 30px;
+  }
+}
 .projects .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,8 +240,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 2px solid #fff;
-  -webkit-box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0);
-          box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0);
   color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -218,6 +248,15 @@ body {
   -webkit-box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.5);
           box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.5);
 }
+@media screen and (max-width: 768px) {
+  .projects .wrapper .item {
+    width: 95%;
+    height: 20vh !important;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.5);
+  }
+}
 .projects .wrapper .item h4 {
   margin: 10px 0 0 0;
 }
@@ -225,6 +264,11 @@ body {
   -webkit-filter: invert(1);
           filter: invert(1);
   width: 100px;
+}
+@media screen and (max-width: 768px) {
+  .projects .wrapper .item img {
+    width: 70px;
+  }
 }
 .projects .wrapper .shop {
   height: 60vh;
@@ -244,6 +288,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .about {
+    height: 120vh;
+  }
+}
 .about .wrapper {
   margin: 40px 0;
 }
@@ -252,11 +301,17 @@ body {
   font-size: 18px;
   text-align: right;
 }
+@media screen and (max-width: 768px) {
+  .about .wrapper .text {
+    font-size: 12px;
+  }
+}
 .about .wrapper h3 {
   font-size: 38px;
 }
 .about .wrapper span {
   font-size: 18px;
+  font-weight: 600;
   font-family: Victor Mono;
 }
 .about .wrapper p {
@@ -265,6 +320,11 @@ body {
 }
 .about .wrapper .col-md-11 {
   text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .about .wrapper .col-md-11 {
+    text-align: center;
+  }
 }
 .about .separator {
   left: 85%;
@@ -282,6 +342,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  overflow: hidden;
   color: #fff;
 }
 .contact .wrapper {
@@ -299,6 +361,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .contact .wrapper {
+    height: 500px;
+  }
 }
 .contact .wrapper .subtitle {
   font-size: 16px;
@@ -325,4 +392,40 @@ body {
 .contact .wrapper .social_media a:hover {
   -webkit-filter: brightness(1);
           filter: brightness(1);
+}
+.contact .footer {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: #fff;
+  border-radius: 100%;
+  bottom: 5%;
+  right: 10%;
+  -webkit-animation: spin 15s linear infinite;
+          animation: spin 15s linear infinite;
+  -webkit-box-shadow: 0px 0px 20px 15px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 20px 15px rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .contact .footer {
+    width: 150px;
+    height: 150px;
+  }
+}
+.contact .footer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -4,18 +4,25 @@
     color: #fff;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 768px) {
+        height: 120vh; 
+    }
     .wrapper {
         margin: 40px 0;
         .text {
             font-family: Victor Mono;
             font-size: 18px;
             text-align: right;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;   
+            }
         }
         h3 {
             font-size: 38px;
         }
         span {
             font-size: 18px;
+            font-weight: 600;
             font-family: Victor Mono;
         }
         p {
@@ -24,6 +31,9 @@
         }
         .col-md-11 {
             text-align: right;
+            @media screen and (max-width: 768px) {
+                text-align: center;
+            }
         }
     }
     .separator {

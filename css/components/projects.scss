@@ -9,6 +9,9 @@
     }
     .button {
         margin-top: 40px;
+        @media screen and (max-width: 768px) {
+            margin-top: 30px;
+        }
     }
     .wrapper {
         display: flex;
@@ -25,10 +28,15 @@
             text-decoration: none;
             flex-direction: column;
             border: 2px solid #fff;
-            box-shadow: 0px 0px 20px 3px rgba(255,255,255, 0);
             color: #fff;
             transition: all 0.3s;
             &:hover {
+                box-shadow: 0px 0px 20px 3px rgba(255,255,255, 0.5);
+            }
+            @media screen and (max-width: 768px) {
+                width: 95%;
+                height: 20vh !important;
+                margin: 20px;
                 box-shadow: 0px 0px 20px 3px rgba(255,255,255, 0.5);
             }
             h4 {
@@ -37,6 +45,9 @@
             img {
                 filter: invert(1);
                 width: 100px;
+                @media screen and (max-width: 768px) {
+                    width: 70px;
+                }
             }
         }
         .shop {
