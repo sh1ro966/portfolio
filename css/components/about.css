@@ -1,0 +1,36 @@
+.about {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .wrapper {
+  margin: 40px 0;
+}
+.about .wrapper .text {
+  font-family: Victor Mono;
+  font-size: 18px;
+  text-align: right;
+}
+.about .wrapper h3 {
+  font-size: 38px;
+}
+.about .wrapper span {
+  font-size: 18px;
+  font-family: Victor Mono;
+}
+.about .wrapper p {
+  font-size: 12px;
+  font-family: Victor Mono;
+}
+.about .wrapper .col-md-11 {
+  text-align: right;
+}
+.about .separator {
+  left: 85%;
+}/*# sourceMappingURL=about.css.map */

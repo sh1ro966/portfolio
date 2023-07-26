@@ -1,0 +1,73 @@
+.projects {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects .separator {
+  left: 62%;
+}
+.projects .button {
+  margin-top: 40px;
+}
+.projects .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.projects .wrapper .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
+  width: 25%;
+  margin: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0);
+          box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0);
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.projects .wrapper .item:hover {
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.5);
+}
+.projects .wrapper .item h4 {
+  margin: 10px 0 0 0;
+}
+.projects .wrapper .item img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 100px;
+}
+.projects .wrapper .shop {
+  height: 60vh;
+}
+.projects .wrapper .info_portal {
+  height: 50vh;
+}/*# sourceMappingURL=projects.css.map */
